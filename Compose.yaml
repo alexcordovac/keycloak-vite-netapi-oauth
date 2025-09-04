@@ -1,0 +1,20 @@
+#docker run -p 127.0.0.1:8080:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:26.3.3 start-dev
+name: keycloak_server
+services: 
+    keycloak:
+        image: quay.io/keycloak/keycloak:26.3.3
+        container_name: keycloak
+        ports:
+            - 8080:8080
+        environment:
+            - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+            - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+        command: ["start-dev"]
+        volumes:
+            - keycloak-data:/opt/keycloak/data
+            - keycloak-conf:/opt/keycloak/conf
+
+
+volumes:
+    keycloak-data:
+    keycloak-conf:
