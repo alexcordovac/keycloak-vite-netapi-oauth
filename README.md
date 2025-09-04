@@ -30,4 +30,17 @@
 | weather | user_gold | X |
 
 
+## Images
+
+### Role "Presenter" can only read
+![alt text](https://github.com/alexcordovac/keycloak-vite-netapi-oauth/blob/main/images/role_user_presenter.png?raw=true)
+
+### Role "Manager" can delete weather items but not add
+![alt text](https://github.com/alexcordovac/keycloak-vite-netapi-oauth/blob/main/images/role_user_manager.png?raw=true)
+
+### Role "Gold" can Delete and Add new weather items
+![alt text](https://github.com/alexcordovac/keycloak-vite-netapi-oauth/blob/main/images/role_user_manager.png?raw=true)
+
+
+
 
