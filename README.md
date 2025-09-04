@@ -1,3 +1,6 @@
+##
+* require .NET 9 installed 
+
 
 ## Vite + Vue
 
