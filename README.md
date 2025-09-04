@@ -13,10 +13,10 @@
 1.- `Run solution using Docker or IIS Express`
 
 ## Keycloak + Docker Compose
-* `copy keycloak_server_keycloak-data in your volumes of docker`
+* `copy keycloak_server_keycloak-data folder in your volumes of docker`
 * `ie. in docker desktop for Windows \\wsl.localhost\docker-desktop\mnt\docker-desktop-disk\data\docker\volumes`
 
-* `change client weather-ui origins if needed`
+* `change client weather-ui origins if needed in Keycloak portal`
 
 1- `run command "docker compose up -d" where Compose.yaml file is located`
 
